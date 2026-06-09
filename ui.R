@@ -1,8 +1,23 @@
 # import library need
-library(shiny); library(shiny.i18n); library(bslib); library(thematic) # shiny and template
-library(DBI); library(RPostgres); library(rpostgis) # database
-library(leaflet); library(leaflet.extras); library(plotly); library(ggplot2) # map
-library(sf); library(dplyr); library(raster); library(htmlwidgets) ; library(viridis)
+# shiny and template
+library(shiny); 
+library(shiny.i18n); 
+library(bslib); 
+library(thematic) 
+# database
+library(DBI); 
+library(RPostgres); 
+library(rpostgis) 
+library(leaflet); 
+library(leaflet.extras); 
+library(plotly); 
+library(ggplot2) 
+# map
+library(sf); 
+library(dplyr); 
+library(raster); 
+library(htmlwidgets) ; 
+library(viridis)
 
 thematic_shiny(font = "auto")
 

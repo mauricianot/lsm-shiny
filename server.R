@@ -59,7 +59,7 @@ fun.connexionDB <- function(status, typeConnexion=NULL) {
   if (is.null(typeConnexion)) { drv <- RPostgres::Postgres() } else { drv <- DBI::dbDriver("PostgreSQL") }
   conn <- dbConnect(
     drv, 
-    dbname=Sys.getenv("POSTGRES_DB_LSM","lsm"), 
+    dbname=Sys.getenv("POSTGRES_DB","lsm"), 
     host=Sys.getenv("POSTGRES_HOST", "postgis_db"), #postgis_db
     port=Sys.getenv("POSTGRES_PORT_INTERNAL", "5432"), #5432
     user=Sys.getenv("POSTGRES_USER","shiny"), 
